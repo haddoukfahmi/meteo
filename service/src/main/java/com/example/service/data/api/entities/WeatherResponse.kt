@@ -6,6 +6,7 @@ import com.google.gson.annotations.SerializedName
 import kotlinx.android.parcel.Parcelize
 
 @Keep
+@Parcelize
 data class WeatherResponse(
     @SerializedName("main")
     val main: Main? = null,
@@ -19,7 +20,7 @@ data class WeatherResponse(
     val weather: List<Weather>? = emptyList(),
     @SerializedName("wind")
     val wind: Wind? = null
-)
+):Parcelable
 
 @Keep
 @Parcelize

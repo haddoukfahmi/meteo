@@ -20,5 +20,3 @@ i
 9app/src/main/java/com/example/meteo/WeatherApplication.kt,a\3\a33e26165983a12d7170b48387a2ad430ceed896
 ?
 settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
-D
-service/build.gradle,1\f\1f8e606322c7d5e36312e15024efb1834ca1b1a3
