@@ -6,12 +6,14 @@
 
     <TextView
         android:id="@+id/error_message"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/error_message"
+        android:textSize="16sp"
         app:drawableStartCompat="@android:drawable/stat_sys_warning"
         app:drawableTint="@android:color/holo_red_dark"
+        android:drawablePadding="@dimen/spacing_xxxs"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

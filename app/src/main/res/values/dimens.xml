@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="border_width_1">1dp</dimen>
+    <dimen name="spacing_xxxs">2dp</dimen>
+    <dimen name="spacing_xs">8dp</dimen>
+    <dimen name="spacing_l">24dp</dimen>
+</resources>

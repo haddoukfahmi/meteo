@@ -1,7 +1,9 @@
 package com.example.service.data.api.entities
 
+import android.os.Parcelable
 import androidx.annotation.Keep
 import com.google.gson.annotations.SerializedName
+import kotlinx.android.parcel.Parcelize
 
 @Keep
 data class WeatherResponse(
@@ -20,6 +22,7 @@ data class WeatherResponse(
 )
 
 @Keep
+@Parcelize
 data class Main(
     @SerializedName("feels_like")
     val feelsLike: Double,
@@ -33,9 +36,10 @@ data class Main(
     val tempMax: Double,
     @SerializedName("temp_min")
     val tempMin: Double
-)
+) : Parcelable
 
 @Keep
+@Parcelize
 data class Sys(
     @SerializedName("country")
     val country: String,
@@ -47,9 +51,10 @@ data class Sys(
     val sunset: Int,
     @SerializedName("type")
     val type: Int
-)
+) : Parcelable
 
 @Keep
+@Parcelize
 data class Weather(
     @SerializedName("description")
     val description: String,
@@ -59,12 +64,13 @@ data class Weather(
     val id: Int,
     @SerializedName("main")
     val main: String
-)
+) : Parcelable
 
 @Keep
+@Parcelize
 data class Wind(
     @SerializedName("deg")
     val deg: Int,
     @SerializedName("speed")
     val speed: Double
-)
+) : Parcelable

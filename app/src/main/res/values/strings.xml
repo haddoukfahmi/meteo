@@ -2,4 +2,6 @@
     <string name="app_name">Meteo</string>
     <string name="error_message">Please check the city name</string>
     <string name="city_name_hint">Enter city name</string>
+    <string name="temperature_text">Temp :</string>
+    <string name="humidity_text">Humidity</string>
 </resources>

@@ -10,17 +10,22 @@ buildscript {
     ext.retrofit_version = '2.9.0'
     ext.httplogging_version = '4.9.3'
     ext.coroutines_version = '1.5.2'
+    ext.glide_version = '4.13.1'
+
 
     repositories {
         google()
         mavenCentral()
+        maven {
+            url "https://maven.google.com"
+        }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:7.0.4"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.20"
         classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+        classpath("androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version")
+
     }
 }
 plugins {
